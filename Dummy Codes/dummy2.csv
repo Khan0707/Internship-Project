@@ -1,0 +1,12 @@
+Question,Keyword,Answer,Output
+What is the revenue from last two months?,revenue,120000,the revenue from last two months is 120000
+Which store received the maximum sales?,"maximum,highest",ABC,ABC STORE RECEIVED THE MAXIMUM SALES
+Which store received the minimum sales?,"minimum,lowest",QWE,QWE STORE RECEIVED THE Minimum SALES
+Which Apparel was sold most?,apparel,Shirt,Shirt was sold most
+What was the average count of sold items in last six months?,average count,2300,An average of 2300 items were sold
+How many non discounted item were sold?,non-discounted,30,30 non discounted items were sold
+How many  discounted item were sold?,discounted item,524,524 discounted items were sold
+Which location is most popular for overall sales ,location,Yemlur, the most popular location interms of overall sales is yemlur
+what is the most popular product sold?,popular product,Jeans, the most popular product sold is jeans
+What is the sales from last two months?,sales,120000,the sales from last two months is 120000
+source,source,,No Sql

@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>Data Labs - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../static/images/favicon.jpg"/>
+
+    <style type="text/css">
+      textarea {
+        resize: none;
+        background-color: white!important;
+      }
+
+      .container {
+        margin-top: 35px;
+      }
+      .container-fluid {
+        padding: 20px;
+      }
+      .mrg-t-25 {
+        margin-top: 25px;
+      }
+      .mrg-t-20 {
+        margin-top: 20px;
+      }
+      .pad-t-50 {
+        padding-top: 50px;
+      }
+      .pad-0 {
+        padding: 0px;
+      }
+      .fas:hover {
+        cursor: pointer;
+      }
+      .navbar-toggler {
+        background: #0097d5;
+      }
+      .br-50 {
+        border-radius: 50px;
+      }
+      .theme-color {
+        color:white;
+      }
+      .mic-color {
+        color:#a5b3bf;
+      }
+      .theme-bg {
+        background: #0097d5;
+      }
+      .custom-bg {
+        background: #EAECEE;
+        
+      }
+      .head-text {
+       /* font-family: Lucida Consolea;/*georgia;*/ 
+        font-size: 80px;
+        margin-left: 180px;
+        position: relative;
+        color: #1F5088    ;
+        /*align-content:center;*/
+/*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
+/*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);*/
+/*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+/*text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);*/
+
+   /*text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+0px 8px 13px rgba(0,0,0,0.1),
+0px 18px 23px rgba(0,0,0,0.1);*/
+
+       text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+
+               /*text-shadow: 0px 0px 6px rgba(255,255,255,0.7);*/
+
+               /*text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);*/
+
+                 /*color: rgba(0,0,0,0.6);*/
+
+
+/*text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);*/
+
+
+
+	}
+      .fa-stack {
+        transition: color .5s;
+      }
+      .fa-stack:hover {
+        color: #D3D3D3;
+      }
+     /* .fa-stack:active{background-color:red;}
+*/
+      .jumbotron {
+        margin-bottom: 0px;
+      }
+      .logout-btn {
+        border-color: #0097d5;background-color: white;opacity: 0.9; border-style: solid; border-radius: 30px; border-width: 2px;margin-right:16px;
+      }
+      .fa-circle {
+        transition: transform .5s;
+        transform: scale(1);
+      }
+      .fa-stack:hover .fa-circle {
+        transform: scale(1.05);
+      }
+
+      .fa-stack:active .fa-circle {
+        color:red;
+        filter: brightness(.8);
+      }
+      .ryt li {
+	   border-radius:100px;
+	   border-width: 10px;
+	   border-style:line;
+	   background-color: white;
+	   margin-bottom :10px;
+	   
+	   
+	}
+
+	div.editable {
+    width: 400px;
+    background: white; 
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+$('.editable').each(function(){
+    this.contentEditable = true;
+});
+
+
+      
+      @media (min-width: 992px) {
+        .navbar-collapse {
+          margin-right: 100px;
+        }
+        .navbar-brand {
+          margin-left: 100px;
+        }
+        
+      }
+
+      @media (max-width: 991.98px) {
+        .navbar-toggler {
+          margin-right: 20px;
+        }
+        .head-text {
+          visibility: visible;
+          font-size: 25px;
+          margin-left:50px;
+        }
+
+      }
+    </style>
+
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+    </script>
+
+
+
+    <script>var synth = window.speechSynthesis;</script>
+    <style>
+        .speech {
+            border: 0px solid #DDD;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+            font-family: "Calibri";
+
+        }
+            .speech input {
+                border: 1;
+                width: 240px;
+                display: inline-block;
+                height: 30px;
+            }
+            .speech img {
+                float: right;
+                width: 40px;
+            }
+    </style>
+  </head>
+  <body>
+
+    <!-- Logo and Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light pad-0 custom-bg" style="background-image: url('../static/images/top7.jpg');">
+
+      <a class="navbar-brand">
+        <img src="../static/images/logos.png" width="120" class="d-inline-block align-top responsive" alt="">
+      </a>
+      <div class="theme-color text-center head-text">
+      DATA LABS LANDMARK
+    </div>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link logout-btn" href="" style="color: black;">Log Out</a>
+          </li>
+          
+        </ul>
+      </div>
+
+    </nav>
+    <form id="form1">
+    <div class="jumbotron" style="background-image: url('../static/images/bg.png')">
+      <h3 align="center"  style="color: white;"> V.E.S (Voice Expert System) </h3>
+      <br>
+
+        <div class="row">
+
+
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-4">
+          	<h5 align="center" style="color: white;">Selected Combination:</h5>
+          	<br>
+
+            <div class="form-group">
+              <div class="form-row">
+                <div class="offset-2 col-8 offset-sm-3 col-sm-6">
+                  <textarea class="form-control br-50" id="area" rows="1" placeholder="Territory" readonly></textarea>
+                   <small style="text-align:center;float:right;color:white;"><b>Example :</b> UAE </small>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-row">
+                <div class="offset-2 col-8 offset-sm-3 col-sm-6">
+                  <textarea class="form-control br-50" id="concept" rows="1" placeholder="Concept" readonly></textarea>
+                  <small style="text-align:center;float:right;color:white;"><b>Example :</b> BABYSHOP </small>
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-row">
+                <div class="offset-2 col-8 offset-sm-3 col-sm-6">
+                  <textarea class="form-control br-50" id="time" rows="1" placeholder="Time" readonly></textarea>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <div class="form-row">
+                
+               
+                
+                <div class="col text-center" style="color: white;">
+                  <i class="fas fa-sync-alt mrg-t-20" id="refresh-btn"  onclick= "window.location.reload()" ></i>  <!-- value="Reset" onclick="form1.reset()"; onClick=window.location.reload()-->
+                  Refresh   
+                </div>
+
+              </div>
+              
+            </div>
+
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-12 col-lg-4 text-center">
+            
+            <span class="fa-stack fa-6x">
+              <i class="fas fa-circle fa-stack-2x icon-background mic-color"></i>
+              <i class="fas fa-microphone fa-stack-1x"  id="mic"  onclick="call();window.setTimeout(blinker,15500);"></i>
+            </span>
+            
+            
+            <br>
+            <br>
+           
+            <p id="speakstatus" style="color: white;" ></p>
+
+
+            <div class="form-group pad-t-50">
+             
+               
+               <textarea class="form-control" id="output" rows="5"  placeholder="Text Output" readonly  ></textarea>   
+
+
+
+
+              
+              <br>
+
+              <div class="form-row">
+                 <div class="offset-2 col-8">
+                  <textarea class="form-control" id="transcript" rows="1" hidden="True" placeholder="Text Input" readonly ></textarea>  <!--hidden="True"-->
+                </div> 
+              </div>
+            </div>
+
+          </div>
+      </form>
+
+
+          <!-- Column 3 -->
+          <div class="col-12 col-lg-4  text-center">
+            <h5 align="center"  style="color: white;">Key Metrics:</h5>
+            <div class="offset-2  col-8 offset-sm-3 col-sm-6">
+            	
+            	<br>
+
+            	<textarea class="form-control br-50""  rows="1"  placeholder="Shukran Revenue" readonly ></textarea> 
+            	<br>
+            	<textarea class="form-control br-50""  rows="1"  placeholder="Churn Percentage" readonly ></textarea>
+            	<br>
+            	<textarea class="form-control br-50""  rows="1"  placeholder="ATV" readonly ></textarea> 
+            	<br>
+            	<textarea class="form-control br-50""  rows="1"  placeholder="AMS" readonly ></textarea> <br>
+              <textarea class="form-control br-50""  rows="1"  placeholder="High Value Revenue" readonly ></textarea>  
+          </div>
+           
+           
+
+
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid text-left custom-bg">
+      <h6 style="text-align:left;float:left;">Copyright © 2019 Data Labs Landmark</h6>
+      <small style="text-align:right;float:right;">In case of queries please reach out to <b><i>aaqibmushtaq.khan@landmarkgroup.in</i></b></small>
+    </div>
+     
+
+
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script> <!--blinkuing-->
+
+
+    <!-- HTML5 Speech Recognition API -->
+    <script>
+    	var greeting='Hi, welcome to V E S - the voice expert system of data labs at landmark.    You can ask me insights for your business and I will try my best to find them.    Start by choosing a territory.'
+var one = function(){
+		   $("#speakstatus").html(" Speaking . . ."); 
+       console.log("Audio---"+greeting);  
+
+          var greet = new SpeechSynthesisUtterance();
+
+          greet.text = greeting;
+          greet.volume = 1;
+          greet.rate = 0.7;
+          greet.pitch = 1;
+          window.speechSynthesis.speak(greet);
+          window.setTimeout(startDictation,15500);
+          
+}
+
+var two = function(){
+
+       resp=[];
+    
+			 $("#speakstatus").html("  Speaking . . .");			
+			 readOutLoud();  
+		   window.setTimeout(startDictation,3700);
+}
+
+function call(){
+  if (sessionStorage.getItem("hasCodeRunBefore") === null) {
+    one();
+    sessionStorage.setItem("hasCodeRunBefore", true);
+        
+    }
+
+  else{
+     	resp=[];
+         two();
+
+    }
+} 
+		var resp = [];     
+        var count=0;
+        var array=['Which territory are you interested in ','Ok , tell me For which concept should I fetch the data for',' ok, so which metric would you like to see numbers for'];//,'Thank you, Take Care, Byee '];
+        function readOutLoud(message) {
+          var messagetemp="";
+          
+          messagetemp=   message;
+
+         $("#speakstatus").html("  Speaking . . .");
+        console.log("Audio---"+array[count]);
+        //console.log("count---"+count);
+                  
+          var speech = new SpeechSynthesisUtterance();
+
+          speech.text = array[count];
+          speech.volume = 1;
+          speech.rate = 0.75;
+          speech.pitch = 1;
+          window.speechSynthesis.speak(speech); }
+
+
+
+          function blinker()
+          {
+          $('.fa-stack').fadeOut(500);
+          $('.fa-stack').fadeIn(500);
+
+
+          }
+
+        function startDictation() {
+
+					console.log("Speak Now");
+                    $("#speakstatus").html(" Listening . . .");
+                    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+                    //webkitSpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+                    var recognition =  new webkitSpeechRecognition();
+                    recognition.continuous = false;
+                    recognition.interimResults = false;
+                    recognition.lang = "en-US";
+                    recognition.start();
+                    //recognition.onaudioend = function() {
+                     //console.log('Audio capturing ended');
+                     //document.getElementById("output").value ="No Inputs Recieved. Please Try Again. "
+                    //}
+
+                    recognition.onend = function(event) {
+                    
+                   /*document.getElementById("output").value ="Time Out.Please Try Again."*/
+                   $("#speakstatus").html("");
+                    
+                  }
+                    recognition.onresult = function (e) {
+                        document.getElementById('transcript').value = e.results[0][0].transcript;
+                        recognition.stop();
+                        var data = e.results[0][0].transcript;
+                        console.log(data);
+
+                        $.post("/lm_query" ,{ "data": data },
+                        function (response) {
+                            resp.push(response)
+                            doSomethingWithArray(resp);
+                        if(count==2){
+                        array.push(resp[2]);
+                        array.push("To Continue, please refresh the Session. To exit, press log out at the top right corner. Thank you for using V E S.");
+                        //document.getElementById("output").value ="To Continue refresh the Session";
+
+                       //new (webkitSpeechRecognition || SpeechRecognition || null);
+
+                        /*$("#speakstatus").html("  Speaking. . .");
+                        $("#speakstatus").html("");*/
+
+                        }
+                       
+    
+                        console.log("resp--------------->>>>>>"+resp);
+
+                        if(resp!="Invalid Input" && resp!="I'm sorry. I did not get that.")
+                             {   
+                            count++;
+
+                            readOutLoud();
+                           var myVar = window.setTimeout(startDictation,3900);
+                          if(count==3)
+                          {
+                           
+                          clearTimeout(myVar);
+                           count++;
+                          readOutLoud();
+                          if (count == 4) {
+                          	count = 0;
+                          }
+                            $("#speakstatus").html("");
+                            
+                        }
+                           
+                           
+                        }
+                        else{
+                          var messagetemp='Please Try Again.';
+                          resp=[];
+                          var speech1 = new SpeechSynthesisUtterance();
+                          console.log("messagetemp-----------------"+messagetemp);
+                                      speech1.text = messagetemp;
+                                      speech1.volume = 1;
+                                      speech1.rate = 0.7;
+                                      speech1.pitch = 1;
+                                      window.speechSynthesis.speak(speech1);
+                                      document.getElementById("output").value = messagetemp;
+                                      $("#speakstatus").html("")
+
+                            }
+
+                           window.speechSynthesis.speak(speech);
+
+                        btnClick()
+
+         
+                        }).error(function (response) {
+                       
+                            if (response.status == 400 ){
+                                text = jQuery.parseJSON(response.responseText)["original_exception"];}
+                            
+                            else{
+                                text = "I'm sorry. I did not get that. Click Refresh. ";
+                            document.getElementById("output").value = text;
+                          }
+
+                        });
+                    
+                  }
+                    recognition.onerror = function (e) {
+                        recognition.stop();
+                        //console.log("Recognition had an error");
+                        $("#speakstatus").html("");
+                        record="Recognition had an error";
+                        document.getElementById("output").value = record;
+                    }
+                   }
+               }
+            function btnClick() {
+                    synth.cancel();
+                    var utterThis = new SpeechSynthesisUtterance(document.getElementById("output").value);
+                    utterThis.voice = synth.getVoices()[0];
+                    utterThis.pitch = 1.0;
+                    utterThis.rate = 0.75;
+                    utterThis.onerror = function(e) { console.log("Something went wrong with utterance."); };
+                    synth.speak(utterThis);
+            }
+
+            function doSomethingWithArray(arr){
+            	document.getElementById('time').value = 'YTD (Jul 18 -Oct 18)';
+
+            	document.getElementById("area").value=resp[0];
+            	if (typeof (resp[1])=="undefined"){
+
+            		document.getElementById("concept").value = '';
+            	}
+            	else {
+            		document.getElementById("concept").value = resp[1];
+            	}
+
+            	if (typeof (resp[2])=="undefined"){
+
+            		document.getElementById("output").value = '';
+            	}
+            	else {
+            		document.getElementById("output").value = resp[2];
+            	}
+
+
+
+
+            }
+            
+
+
+    </script>
+
+  </body>
+</html>
